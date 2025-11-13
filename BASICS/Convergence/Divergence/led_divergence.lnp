@@ -1,0 +1,4 @@
+--cpu ARM7TDMI "startup.o" "divergence.o" --strict --scatter "led_divergence.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\led_divergence.map" -o "led_divergence.axf"
