@@ -1,0 +1,4 @@
+--cpu ARM7TDMI "startup.o" "led_seq2.o" --strict --scatter "led_seq2.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\led_seq2.map" -o "led_seq2.axf"
