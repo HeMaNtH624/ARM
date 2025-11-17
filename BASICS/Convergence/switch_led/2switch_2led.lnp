@@ -1,0 +1,4 @@
+--cpu ARM7TDMI "startup.o" "switch_led.o" --strict --scatter "2switch_2led.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\2switch_2led.map" -o "2switch_2led.axf"
