@@ -1,0 +1,56 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\v25ce3g2\hemanth\ARM\BASICS\LCD_char_by_char\lcd_AtoZ.uvproj
+Project File Date:  11/14/2025
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling Startup.s...
+compiling A_to_Z.c...
+A_to_Z.c(3): error:  #5: cannot open source input file "delay.h": No such file or directory
+A_to_Z.c:   #include "delay.h"
+A_to_Z.c:                     ^
+A_to_Z.c: A_to_Z.c: 0 warnings, 1 error
+Target not created
+Build target 'Target 1'
+compiling A_to_Z.c...
+A_to_Z.c(3): error:  #5: cannot open source input file "delay.h": No such file or directory
+A_to_Z.c:   #include "delay.h"
+A_to_Z.c:                     ^
+A_to_Z.c: A_to_Z.c: 0 warnings, 1 error
+Target not created
+Build target 'Target 1'
+compiling A_to_Z.c...
+A_to_Z.c(3): error:  #5: cannot open source input file "delay.h": No such file or directory
+A_to_Z.c:   #include "delay.h"
+A_to_Z.c:                     ^
+A_to_Z.c: A_to_Z.c: 0 warnings, 1 error
+Target not created
+Build target 'Target 1'
+compiling A_to_Z.c...
+A_to_Z.c(3): error:  #5: cannot open source input file "delay.h": No such file or directory
+A_to_Z.c:   #include "delay.h"
+A_to_Z.c:                     ^
+A_to_Z.c: A_to_Z.c: 0 warnings, 1 error
+Target not created
+Build target 'Target 1'
+compiling A_to_Z.c...
+delay.h(6): warning:  #1-D: last line of file ends without a newline
+delay.h:   }
+delay.h:    ^
+delay.h: A_to_Z.c: 1 warning, 0 errors
+linking...
+Program Size: Code=752 RO-data=16 RW-data=0 ZI-data=1256  
+"lcd_AtoZ.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling A_to_Z.c...
+delay.h(6): warning:  #1-D: last line of file ends without a newline
+delay.h:   }
+delay.h:    ^
+delay.h: A_to_Z.c: 1 warning, 0 errors
+linking...
+Program Size: Code=752 RO-data=16 RW-data=0 ZI-data=1256  
+"lcd_AtoZ.axf" - 0 Error(s), 1 Warning(s).
