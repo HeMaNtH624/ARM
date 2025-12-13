@@ -1,0 +1,4 @@
+--cpu ARM7TDMI "startup.o" "volatile.o" --strict --scatter "volatile_keyword.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\volatile_keyword.map" -o "volatile_keyword.axf"

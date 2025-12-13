@@ -1,0 +1,20 @@
+*** Creating Trace Output File 'volatile_keyword.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup.o"'
+### List of Objects: adding '"volatile.o"'
+### ADS-LD Command completed:
+--cpu ARM7TDMI "startup.o" "volatile.o" --strict --scatter "volatile_keyword.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\volatile_keyword.map" -o "volatile_keyword.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'volatile_keyword.axf'
+### ADS-LD Command File: 'volatile_keyword.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'volatile_keyword.lnp', Handle=0x000000A8
+### Writing '.lnp' file
+### ADS-LD Command file 'volatile_keyword.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
