@@ -1,0 +1,36 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\v25ce3g2\hemanth\ARM\7_segment\count2\digits.uvproj
+Project File Date:  12/01/2025
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling Startup.s...
+linking...
+digits.axf: Warning: L6665W: Neither Lib$$Request$$armlib Lib$$Request$$cpplib defined, not searching ARM libraries.
+digits.axf: Error: L6411E: No compatible library exists with a definition of startup symbol __main.
+digits.axf: Not enough information to list image symbols.
+digits.axf: Not enough information to list the image map.
+digits.axf: Finished: 2 information, 1 warning and 1 error messages.
+Target not created
+Build target 'Target 1'
+linking...
+digits.axf: Warning: L6665W: Neither Lib$$Request$$armlib Lib$$Request$$cpplib defined, not searching ARM libraries.
+digits.axf: Error: L6411E: No compatible library exists with a definition of startup symbol __main.
+digits.axf: Not enough information to list image symbols.
+digits.axf: Not enough information to list the image map.
+digits.axf: Finished: 2 information, 1 warning and 1 error messages.
+Target not created
+Build target 'Target 1'
+compiling digits.c...
+digits.c(65): warning:  #1-D: last line of file ends without a newline
+digits.c:   }
+digits.c:    ^
+digits.c: digits.c: 1 warning, 0 errors
+linking...
+Program Size: Code=1012 RO-data=32 RW-data=12 ZI-data=1260  
+FromELF: creating hex file...
+"digits.axf" - 0 Error(s), 1 Warning(s).
