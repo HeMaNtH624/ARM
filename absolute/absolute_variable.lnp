@@ -1,0 +1,4 @@
+--cpu ARM7TDMI "startup.o" "absolute.o" --strict --scatter "absolute_variable.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\absolute_variable.map" -o "absolute_variable.axf"

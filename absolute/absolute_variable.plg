@@ -1,0 +1,30 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\v25ce3g2\hemanth\ARM\absolute\absolute_variable.uvproj
+Project File Date:  12/11/2025
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling Startup.s...
+compiling absolute.c...
+absolute.c(23): warning:  #1-D: last line of file ends without a newline
+absolute.c:   }
+absolute.c:    ^
+absolute.c: absolute.c: 1 warning, 0 errors
+linking...
+Program Size: Code=852 RO-data=16 RW-data=0 ZI-data=1264  
+FromELF: creating hex file...
+"absolute_variable.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling absolute.c...
+absolute.c(26): warning:  #1-D: last line of file ends without a newline
+absolute.c:   }
+absolute.c:    ^
+absolute.c: absolute.c: 1 warning, 0 errors
+linking...
+Program Size: Code=844 RO-data=16 RW-data=0 ZI-data=1264  
+FromELF: creating hex file...
+"absolute_variable.axf" - 0 Error(s), 1 Warning(s).

@@ -1,0 +1,4 @@
+Dependencies for Project 'absolute_variable', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x4BB1C206)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\KeilARM\ARM\INC" -I "C:\KeilARM\ARM\INC\Philips" --list "Startup.lst" --xref -o "Startup.o" --depend "Startup.d")
+F (.\absolute.c)(0x693A420A)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I "C:\KeilARM\ARM\INC" -I "C:\KeilARM\ARM\INC\Philips" -o "absolute.o" --omf_browse "absolute.crf" --depend "absolute.d")
+I (C:\KeilARM\ARM\INC\Philips\lpc21xx.h)(0x4BB1C2C8)
