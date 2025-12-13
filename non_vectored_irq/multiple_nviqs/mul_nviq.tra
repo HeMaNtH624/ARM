@@ -1,0 +1,20 @@
+*** Creating Trace Output File 'mul_nviq.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup.o"'
+### List of Objects: adding '"nvi1.o"'
+### ADS-LD Command completed:
+--cpu ARM7TDMI "startup.o" "nvi1.o" --strict --scatter "mul_nviq.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\mul_nviq.map" -o "mul_nviq.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'mul_nviq.axf'
+### ADS-LD Command File: 'mul_nviq.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'mul_nviq.lnp', Handle=0x00000148
+### Writing '.lnp' file
+### ADS-LD Command file 'mul_nviq.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

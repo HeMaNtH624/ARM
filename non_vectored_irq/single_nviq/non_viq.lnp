@@ -1,0 +1,4 @@
+--cpu ARM7TDMI "startup.o" "nviq.o" --strict --scatter "non_viq.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\non_viq.map" -o "non_viq.axf"

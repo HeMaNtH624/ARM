@@ -1,0 +1,53 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\v25ce3g2\hemanth\ARM\interrupts\non_vectored_irq\single_nviq\non_viq.uvproj
+Project File Date:  12/08/2025
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling Startup.s...
+compiling nviq.c...
+nviq.c(20): error:  #20: identifier "VICDefAddr" is undefined
+nviq.c:         VICDefAddr = isr;
+nviq.c:         ^
+nviq.c(29): error:  #20: identifier "count" is undefined
+nviq.c:                 count++;
+nviq.c:                 ^
+nviq.c(34): warning:  #1-D: last line of file ends without a newline
+nviq.c:   }
+nviq.c:    ^
+nviq.c: nviq.c: 1 warning, 2 errors
+Target not created
+Build target 'Target 1'
+compiling nviq.c...
+nviq.c(21): error:  #513: a value of type "void (*)(void)__irq" cannot be assigned to an entity of type "unsigned long"
+nviq.c:         VICDefVectAddr = isr;
+nviq.c:                        ^
+nviq.c(35): warning:  #1-D: last line of file ends without a newline
+nviq.c:   }
+nviq.c:    ^
+nviq.c: nviq.c: 1 warning, 1 error
+Target not created
+Build target 'Target 1'
+compiling nviq.c...
+nviq.c(35): warning:  #1-D: last line of file ends without a newline
+nviq.c:   }
+nviq.c:    ^
+nviq.c: nviq.c: 1 warning, 0 errors
+linking...
+Program Size: Code=900 RO-data=16 RW-data=0 ZI-data=1264  
+FromELF: creating hex file...
+"non_viq.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling nviq.c...
+nviq.c(35): warning:  #1-D: last line of file ends without a newline
+nviq.c:   }
+nviq.c:    ^
+nviq.c: nviq.c: 1 warning, 0 errors
+linking...
+Program Size: Code=896 RO-data=16 RW-data=0 ZI-data=1264  
+FromELF: creating hex file...
+"non_viq.axf" - 0 Error(s), 1 Warning(s).

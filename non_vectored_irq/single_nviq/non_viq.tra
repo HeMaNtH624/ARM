@@ -1,0 +1,20 @@
+*** Creating Trace Output File 'non_viq.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup.o"'
+### List of Objects: adding '"nviq.o"'
+### ADS-LD Command completed:
+--cpu ARM7TDMI "startup.o" "nviq.o" --strict --scatter "non_viq.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\non_viq.map" -o "non_viq.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'non_viq.axf'
+### ADS-LD Command File: 'non_viq.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'non_viq.lnp', Handle=0x00000304
+### Writing '.lnp' file
+### ADS-LD Command file 'non_viq.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
