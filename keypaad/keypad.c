@@ -1,4 +1,4 @@
-//#include<LPC21XX.H>
+//#include<LPC21XX.H> 
 #include "lcd_header.h"
 #define c0 (IOPIN0&(1<<0))
 #define c1 (IOPIN0&(1<<1))
@@ -91,3 +91,4 @@ int main()
 	}
 
 }
+
