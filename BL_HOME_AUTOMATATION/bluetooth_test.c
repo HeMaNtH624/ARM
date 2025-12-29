@@ -1,5 +1,5 @@
 #include "lcd_header.h"
-#include<string.h>
+#include <string.h>
 
 #define led1 1<<23
 #define buz 1<<24
@@ -116,3 +116,4 @@ unsigned char UART_RX(void)
 	while((U0LSR&1)==0);
 	return U0RBR;
 }
+
