@@ -1,0 +1,129 @@
+Build target 'Target 1'
+assembling Startup.s...
+compiling i2c.c...
+lcd_header.h(2): error:  #5: cannot open source input file "delay.h": No such file or directory
+lcd_header.h:   #include "delay.h"
+lcd_header.h:                     ^
+lcd_header.h: i2c.c: 0 warnings, 1 error
+Target not created
+Build target 'Target 1'
+compiling i2c.c...
+lcd_header.h(15): warning:  #174-D: expression has no effect
+lcd_header.h:           for(  ms; ms>0; ms--)
+lcd_header.h:                 ^
+i2c.c(6): warning:  #47-D: incompatible redefinition of macro "EN" (declared at line 5 of "lcd_header.h")
+i2c.c:   #define EN 6
+i2c.c:           ^
+i2c.c(35): error:  #147: declaration is incompatible with "void eeprom_read(u8, u8)" (declared at line 15)
+i2c.c:   u8 eeprom_read( u8 slv_addr, u8 data_addr)
+i2c.c:      ^
+i2c.c(42): error:  #7: unrecognized token
+i2c.c:   `      i2c_write(slv_addr<<1|1);
+i2c.c:   ^
+i2c.c(42): error:  #29: expected an expression
+i2c.c:   `      i2c_write(slv_addr<<1|1);
+i2c.c:   ^
+i2c.c(51): error:  #20: identifier "I2CONSLR" is undefined
+i2c.c:          I2CONSLR=1<<SI;
+i2c.c:          ^
+i2c.c(94): warning:  #550-D: variable "ch" was set but never used
+i2c.c:          char ch;
+i2c.c:               ^
+i2c.c: i2c.c: 3 warnings, 4 errors
+Target not created
+Build target 'Target 1'
+compiling i2c.c...
+lcd_header.h(15): warning:  #174-D: expression has no effect
+lcd_header.h:           for(  ms; ms>0; ms--)
+lcd_header.h:                 ^
+i2c.c(42): error:  #7: unrecognized token
+i2c.c:   `      i2c_write(slv_addr<<1|1);
+i2c.c:   ^
+i2c.c(42): error:  #29: expected an expression
+i2c.c:   `      i2c_write(slv_addr<<1|1);
+i2c.c:   ^
+i2c.c(94): warning:  #550-D: variable "ch" was set but never used
+i2c.c:          char ch;
+i2c.c:               ^
+i2c.c: i2c.c: 2 warnings, 2 errors
+Target not created
+Build target 'Target 1'
+compiling i2c.c...
+lcd_header.h(15): warning:  #174-D: expression has no effect
+lcd_header.h:           for(  ms; ms>0; ms--)
+lcd_header.h:                 ^
+i2c.c(42): error:  #7: unrecognized token
+i2c.c:   `      i2c_write((slv_addr<<1)|1);
+i2c.c:   ^
+i2c.c(42): error:  #29: expected an expression
+i2c.c:   `      i2c_write((slv_addr<<1)|1);
+i2c.c:   ^
+i2c.c(94): warning:  #550-D: variable "ch" was set but never used
+i2c.c:          char ch;
+i2c.c:               ^
+i2c.c: i2c.c: 2 warnings, 2 errors
+Target not created
+Build target 'Target 1'
+compiling i2c.c...
+lcd_header.h(15): warning:  #174-D: expression has no effect
+lcd_header.h:           for(  ms; ms>0; ms--)
+lcd_header.h:                 ^
+i2c.c(94): warning:  #550-D: variable "ch" was set but never used
+i2c.c:          char ch;
+i2c.c:               ^
+i2c.c: i2c.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=1524 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_Protocol.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1524 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_Protocol.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1524 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_Protocol.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling i2c.c...
+lcd_header.h(111): warning:  #177-D: variable "count" was declared but never referenced
+lcd_header.h:           int count = 0;
+lcd_header.h:               ^
+i2c.c(32): warning:  #223-D: function "delay_ms" declared implicitly
+i2c.c:          delay_ms(10);
+i2c.c:          ^
+i2c.c(94): warning:  #550-D: variable "ch" was set but never used
+i2c.c:          char ch;
+i2c.c:               ^
+i2c.c: i2c.c: 3 warnings, 0 errors
+linking...
+I2C_Protocol.axf: Error: L6218E: Undefined symbol delay_ms (referred from i2c.o).
+I2C_Protocol.axf: Not enough information to list image symbols.
+I2C_Protocol.axf: Finished: 1 information, 0 warning and 1 error messages.
+Target not created
+Build target 'Target 1'
+compiling i2c.c...
+lcd_header.h(9): warning:  #174-D: expression has no effect
+lcd_header.h:           for(ms; ms>=0; ms--)
+lcd_header.h:               ^
+lcd_header.h(76): warning:  #177-D: variable "count" was declared but never referenced
+lcd_header.h:           int count = 0;
+lcd_header.h:               ^
+lcd_header.h: i2c.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=1788 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_Protocol.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling i2c.c...
+linking...
+Program Size: Code=1784 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_Protocol.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1784 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_Protocol.axf" - 0 Error(s), 0 Warning(s).
