@@ -2,7 +2,7 @@
 
 //void FIQ_Handler(void) __attribute__((interrupt("FIQ")));
 
-void FIQ_Handler(void) __irq
+void fiq_intr(void) __irq
 {
     EXTINT = 1;          
 
@@ -22,7 +22,7 @@ int main()
     EXTMODE = 0x00;   
     EXTPOLAR = 0x00;  
 
-    VICDefVectAddr = (unsigned long)FIQ_Handler;
+    VICDefVectAddr = (unsigned long)fiq_intr;
     
     VICIntEnable = (1<<14);  
 
