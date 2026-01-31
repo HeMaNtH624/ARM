@@ -1,0 +1,302 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\v25ce3g2\hemanth\ARM\I2C_PROTOCOL\I2C_PROTOCOL.uvproj
+Project File Date:  01/31/2026
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling I2C.C...
+I2C.C(21): error:  #130: expected a "{"
+I2C.C:   void stop(void);
+I2C.C:   ^
+I2C.C(27): warning:  #12-D: parsing restarts here after previous syntax error
+I2C.C:   {
+I2C.C:   ^
+I2C.C(30): error:  #20: identifier "slv_addr" is undefined
+I2C.C:          i2c_write(slv_addr<<1);
+I2C.C:                    ^
+I2C.C(31): error:  #20: identifier "data_addr" is undefined
+I2C.C:          i2c_write(data_addr);
+I2C.C:                    ^
+I2C.C(32): error:  #20: identifier "data" is undefined
+I2C.C:          i2c_write(data);
+I2C.C:                    ^
+I2C.C(33): warning:  #223-D: function "stop" declared implicitly
+I2C.C:          stop();
+I2C.C:          ^
+I2C.C(45): warning:  #223-D: function "restart" declared implicitly
+I2C.C:          restart();
+I2C.C:          ^
+I2C.C(48): warning:  #223-D: function "stop" declared implicitly
+I2C.C:          stop();
+I2C.C:          ^
+I2C.C(70): error:  #247: function "start" has already been defined
+I2C.C:   void start(void)
+I2C.C:        ^
+I2C.C(78): error:  #159: declaration is incompatible with previous "stop" (declared at line 33)
+I2C.C:   void stop(void)
+I2C.C:        ^
+I2C.C(86): error:  #159: declaration is incompatible with previous "restart" (declared at line 45)
+I2C.C:   void restart(void)
+I2C.C:        ^
+I2C.C: I2C.C: 4 warnings, 7 errors
+Target not created
+Build target 'Target 1'
+compiling I2C.C...
+linking...
+Program Size: Code=1784 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_PROTOCOL.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1784 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_PROTOCOL.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1784 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_PROTOCOL.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling I2C.C...
+linking...
+Program Size: Code=1836 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_PROTOCOL.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling I2C.C...
+linking...
+Program Size: Code=1836 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_PROTOCOL.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling I2C.C...
+linking...
+Program Size: Code=1852 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_PROTOCOL.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling I2C.C...
+linking...
+Program Size: Code=1864 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_PROTOCOL.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling I2C.C...
+linking...
+Program Size: Code=1864 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_PROTOCOL.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling I2C.C...
+linking...
+Program Size: Code=1864 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_PROTOCOL.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling I2C.C...
+linking...
+Program Size: Code=1876 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_PROTOCOL.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling I2C.C...
+I2C.C(62): error:  #20: identifier "p" is undefined
+I2C.C:                  i2c_write(p[i]);
+I2C.C:                            ^
+I2C.C(82): warning:  #120-D: return value type does not match the function type
+I2C.C:          return data;
+I2C.C:                 ^
+I2C.C(83): warning:  #111-D: statement is unreachable
+I2C.C:          stop();
+I2C.C:          ^
+I2C.C(155): warning:  #513-D: a value of type "u8 *" cannot be assigned to an entity of type "char *"
+I2C.C:          data=eproem_page_read(0x50, 0x00, 8);
+I2C.C:              ^
+I2C.C(160): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+I2C.C:          LCD_STRING(data);
+I2C.C:                     ^
+I2C.C(162): warning:  #223-D: function "strcmp" declared implicitly
+I2C.C:          if((strcmp(data, "HEMANTH"))==0)
+I2C.C:              ^
+I2C.C: I2C.C: 5 warnings, 1 error
+Target not created
+Build target 'Target 1'
+compiling I2C.C...
+I2C.C(82): warning:  #120-D: return value type does not match the function type
+I2C.C:          return data;
+I2C.C:                 ^
+I2C.C(83): warning:  #111-D: statement is unreachable
+I2C.C:          stop();
+I2C.C:          ^
+I2C.C(155): warning:  #513-D: a value of type "u8 *" cannot be assigned to an entity of type "char *"
+I2C.C:          data=eproem_page_read(0x50, 0x00, 8);
+I2C.C:              ^
+I2C.C(160): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+I2C.C:          LCD_STRING(data);
+I2C.C:                     ^
+I2C.C(162): warning:  #223-D: function "strcmp" declared implicitly
+I2C.C:          if((strcmp(data, "HEMANTH"))==0)
+I2C.C:              ^
+I2C.C: I2C.C: 5 warnings, 0 errors
+linking...
+Program Size: Code=2344 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_PROTOCOL.axf" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling I2C.C...
+I2C.C(82): warning:  #120-D: return value type does not match the function type
+I2C.C:          return data;
+I2C.C:                 ^
+I2C.C(83): warning:  #111-D: statement is unreachable
+I2C.C:          stop();
+I2C.C:          ^
+I2C.C(155): warning:  #513-D: a value of type "u8 *" cannot be assigned to an entity of type "char *"
+I2C.C:          data=eproem_page_read(0x50, 0x00, 8);
+I2C.C:              ^
+I2C.C(160): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+I2C.C:          LCD_STRING(data);
+I2C.C:                     ^
+I2C.C: I2C.C: 4 warnings, 0 errors
+linking...
+Program Size: Code=2344 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_PROTOCOL.axf" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling I2C.C...
+I2C.C(83): warning:  #111-D: statement is unreachable
+I2C.C:          stop();
+I2C.C:          ^
+I2C.C(155): warning:  #513-D: a value of type "u8 *" cannot be assigned to an entity of type "char *"
+I2C.C:          data=eeprom_page_read(0x50, 0x00, 8);
+I2C.C:              ^
+I2C.C(160): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+I2C.C:          LCD_STRING(data);
+I2C.C:                     ^
+I2C.C: I2C.C: 3 warnings, 0 errors
+linking...
+Program Size: Code=2344 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_PROTOCOL.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling I2C.C...
+I2C.C(83): warning:  #111-D: statement is unreachable
+I2C.C:          stop();
+I2C.C:          ^
+I2C.C(162): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+I2C.C:          if((strcmp(data, "HEMANTH"))==0)
+I2C.C:                     ^
+I2C.C: I2C.C: 2 warnings, 0 errors
+linking...
+Program Size: Code=2344 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_PROTOCOL.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling I2C.C...
+I2C.C(162): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+I2C.C:          if((strcmp(data, "HEMANTH"))==0)
+I2C.C:                     ^
+I2C.C: I2C.C: 1 warning, 0 errors
+linking...
+Program Size: Code=2348 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_PROTOCOL.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=2348 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_PROTOCOL.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling I2C.C...
+I2C.C(162): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+I2C.C:          if((strcmp(data, "I2C"))==0)
+I2C.C:                     ^
+I2C.C: I2C.C: 1 warning, 0 errors
+linking...
+Program Size: Code=2344 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_PROTOCOL.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling I2C.C...
+I2C.C(82): error:  #118: a void function may not return a value
+I2C.C:          return data;
+I2C.C:                 ^
+I2C.C(161): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+I2C.C:          if((strcmp(data, "I2C"))==0)
+I2C.C:                     ^
+I2C.C: I2C.C: 1 warning, 1 error
+Target not created
+Build target 'Target 1'
+compiling I2C.C...
+I2C.C(161): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+I2C.C:          if((strcmp(data, "I2C"))==0)
+I2C.C:                     ^
+I2C.C: I2C.C: 1 warning, 0 errors
+linking...
+Program Size: Code=2344 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_PROTOCOL.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling I2C.C...
+I2C.C(154): error:  #167: argument of type "unsigned char **" is incompatible with parameter of type "u8 *"
+I2C.C:          eeprom_page_read(0x50, 0x00, &data, 8);
+I2C.C:                                       ^
+I2C.C(161): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+I2C.C:          if((strcmp(data, "I2C"))==0)
+I2C.C:                     ^
+I2C.C: I2C.C: 1 warning, 1 error
+Target not created
+Build target 'Target 1'
+compiling I2C.C...
+I2C.C(161): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+I2C.C:          if((strcmp(data, "I2C"))==0)
+I2C.C:                     ^
+I2C.C: I2C.C: 1 warning, 0 errors
+linking...
+Program Size: Code=2344 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_PROTOCOL.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling I2C.C...
+I2C.C(78): error:  #20: identifier "data" is undefined
+I2C.C:                  data[i]=master_ack();
+I2C.C:                  ^
+I2C.C(80): error:  #20: identifier "data" is undefined
+I2C.C:          data[i]=i2c_read();
+I2C.C:          ^
+I2C.C(83): warning:  #940-D: missing return statement at end of non-void function "eeprom_page_read"
+I2C.C:   }
+I2C.C:   ^
+I2C.C(161): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+I2C.C:          if((strcmp(data, "I2C"))==0)
+I2C.C:                     ^
+I2C.C: I2C.C: 2 warnings, 2 errors
+Target not created
+Build target 'Target 1'
+compiling I2C.C...
+I2C.C(162): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+I2C.C:          if((strcmp(data, "I2C"))==0)
+I2C.C:                     ^
+I2C.C: I2C.C: 1 warning, 0 errors
+linking...
+Program Size: Code=2344 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_PROTOCOL.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=2344 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_PROTOCOL.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling I2C.C...
+I2C.C(162): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+I2C.C:          if((strcmp(data, "HEMANTH"))==0)
+I2C.C:                     ^
+I2C.C: I2C.C: 1 warning, 0 errors
+linking...
+Program Size: Code=2348 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"I2C_PROTOCOL.axf" - 0 Error(s), 1 Warning(s).
