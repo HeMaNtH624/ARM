@@ -1,0 +1,63 @@
+#include<lpc21xx.h>
+#include"lcd_header.h"
+
+#define mode0 0x00
+#define mode1 0x08
+#define mode2 0x10
+#define mode3 0x18
+#define MSTR 5
+#define LSBF 6
+#define SPIE 7
+#define SPIF 7
+#define cs 7
+typedef unsigned char u8;
+
+void spi_init(void)
+{
+	PINSEL0|=0X00001500;
+	S0SPCCR=150;
+	S0SPCR=1<<MSTR|mode3;
+	IODIR0|=1<<cs;
+	IOSET0|=1<<cs;
+}
+
+u8 spi0_read(u8 ch)
+{
+	u8 spif;
+	spif=S0SPSR;
+	S0SPDR=ch;
+	while(((S0SPSR>>SPIE)&1)==0);
+	return SOSPDR;
+}
+
+float adc_mcp3204(u8 ch_no)
+{
+	u8 lByte, hByte;
+	int adc;	
+	IOCLR0|=1<<cs; //clearing cs bit to select slave
+	spi0_read(0x06); //first byte from the data frame of spi
+	hByte=spi0_read(ch_no<<6);
+	lByte=spi0_read(0);
+	IOSET0|=1<<cs;
+	adc=((hByte&0xf)<<8)|lByte;
+	adc=(adc*3.3)/4096;
+	return adc;
+}
+
+int main()
+{
+	float f;
+	spi_init();
+	LCD_INIT();
+	LCD_CMD(0X80);
+	LCD_STR("SPI...");
+	while(1)
+	{
+		f=adc_mcp3204(0);
+		LCD_CMD(0XC0);
+		LCD_FLOAT(f);
+		delay_ms(500);
+		LCD_CMD(0XC0);
+		LCD_STR(" ");
+	}
+}
