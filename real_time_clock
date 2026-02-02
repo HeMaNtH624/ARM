@@ -1,0 +1,198 @@
+#include<LPC21XX.H>
+#include"lcd_header.h"
+#define SDA 0x00000010
+#define SCL 0x00000040
+#define EN 6
+#define STA 5
+#define STO 4
+#define SI 3
+#define ACK 2
+
+void write(unsigned char, unsigned char, unsigned char);
+unsigned char read(unsigned char, unsigned char );
+void i2c_write(unsigned char );
+unsigned char i2c_read(void);
+void page_write(u8, u8, u8 *, u8);
+
+void delay_ms(unsigned char dlyMS)
+{
+  unsigned char j;
+  for(;dlyMS>0;dlyMS--)
+  {
+   for(j=12000;j>0;j--);
+  }
+}
+
+void start(void)
+{
+	I2CONSET=1<<STA;
+	while(((I2CONSET>>SI)&1)==0);
+	I2CONCLR=1<<STA;
+}
+
+void stop(void)
+{
+	I2CONSET=1<<STO;
+	I2CONCLR=1<<SI;
+}
+
+void i2c_init(void)
+{
+	PINSEL0|=SDA|SCL;
+	I2SCLL=75;
+	I2SCLH=75;
+	I2CONSET=1<<EN;
+}
+
+void restart(void)
+{
+	I2CONSET=1<<STA;
+	I2CONCLR=1<<SI;
+	while(((I2CONSET>>SI)&1)==0);
+	I2CONCLR=1<<STA;
+}
+
+void write(unsigned char slv_addr, unsigned char data_addr, unsigned char data)
+{
+	start();
+	i2c_write(slv_addr<<1);
+	i2c_write(data_addr);
+	i2c_write(data);
+	stop();
+	delay_ms(10);
+}
+
+unsigned char read(unsigned char slv_addr, unsigned char data_addr)
+{
+	unsigned char ch;
+	start();
+	i2c_write(slv_addr<<1);
+	i2c_write(data_addr);
+	restart();
+	i2c_write(slv_addr<<1|1);
+	ch=i2c_read();
+	stop();
+	return ch;
+}
+
+void i2c_write(unsigned char ch)
+{
+	I2DAT=ch;
+	I2CONCLR=1<<SI;
+	while(((I2CONSET>>SI)&1)==0);
+}
+
+unsigned char i2c_read(void)
+{
+	I2CONSET=0X00;
+	I2CONCLR=1<<SI;
+	while(((I2CONSET>>SI)&1)==0);
+	return I2DAT;
+}
+
+void page_write(u8 slv_addr, u8 data_addr, u8 *data, u8 size)
+{
+	u8 i;
+	start();
+	i2c_write(slv_addr<<1);
+	i2c_write(data_addr);
+	for(i=0; i<size; i++)
+	{
+		i2c_write(data[i]);
+	}
+	stop();
+}
+
+u8 *page_write(u8 slv_addr, u8 data_addr, u8 size)
+{
+	u8 *data, i;
+	start();
+	i2c_write(slv_addr<<1);
+	i2c_write(data_addr);
+	restart();
+	i2c_write(slv_addr<<1|1);
+	for(i=0; i<size-1; i++)
+	{
+		data[i]=master_ack();
+	}
+	data[i]=i2c_read();
+	stop();
+	return data;
+}
+
+u8 master_ack(void)
+{
+	I2CONSET=1<<ACK;
+	I2CONCLR=1<<SI;
+	while((I2CONSET>>1)&1)==0);
+	I2CONCLR=1<<ACK;
+	return I2DAT;
+}
+
+void rtc_write(u8 data)
+{
+	start();
+	i2c_write(data);
+	stop();
+	delay_ms(10);
+}
+
+int main()
+{
+	u8 *ch, i;
+	LCD_INIT();
+	LCD_CMD(0X80);
+	LCD_STR("REAL TIME CLOCK");
+	dleay_ms(1000);
+	i2c_init();
+	rtc_write(0x68<<1);
+	rtc_write(0x00);
+	rtc_write(0x01); 	//seconds
+	rtc_write(0x15);	//minutes
+	rtc_write(0x48);	//hours
+	rtc_write(0x02);	//days
+	rtc_write(0x02);	//date
+	rtc_write(0x02);	//month
+	rtc_write(0x18);	//year
+	while(1)
+	{
+	ch=page_read(0x68, 0x00, 7);
+	for(i=0; i<7; i++)
+	{
+		if(i==2)
+		{
+			ch[i]=((ch>>4)&(0x1))|(ch&0xf)
+		}
+		else
+			ch[i]=ch&0xff;
+	}
+	
+	LCD_CMD(0X80);
+	LCD_STR("TIME:");
+	LCD_INTEGER(ch[2]);
+	LCD_DATA(':');
+	LCD_INTEGER(ch[1]);
+	LCD_DATA(':');
+	LCD_INTEGER(ch[0]);
+	LCD_CMD(0XC0);
+	LCD_STR(" ");
+	LCD_INTEGER(ch[4]);
+	LCD_DATA('/');
+	LCD_INTEGER(ch[5]);
+	LCD_DATA('/');
+	LCD_INTEGER(ch[6]);
+	
+	switch(ch[3])
+	{
+		case 1: LCD_STR(" SUN"); break;
+		case 2: LCD_STR(" MON"); break;
+		case 3: LCD_STR(" TUE"); break;
+		case 4: LCD_STR(" WED"); break;
+		case 5: LCD_STR(" THU"); break;
+		case 6: LCD_STR(" FRI"); break;
+		case 7: LCD_STR(" SAT"); break;
+		case default: LCD_STR(" NULL"); break;
+	}
+}
+	
+}
