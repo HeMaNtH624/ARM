@@ -1,6 +1,6 @@
 #include<lpc21xx.h>
 
-void float_point(float);
+void float_point(float); 
 void four_digit(int);
 
 #define seg_d 0xff
@@ -93,4 +93,5 @@ void four_digit(int n)
 	}
 
 }
+
 
