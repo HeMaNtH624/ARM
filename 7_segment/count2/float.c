@@ -9,7 +9,7 @@ void four_digit(int);
 #define seg_3 1<<10 
 #define seg_4 1<<11  
 
-int dp1=0, dp2=0, dp3=0;
+int dp1=0, dp2=0, dp3=0; 
 
 unsigned char arr[]={0xc0, 0xf9, 0xa4, 0xb0, 0x99, 0x92, 0x82, 0xf8, 0x80, 0x90};
 
@@ -93,5 +93,6 @@ void four_digit(int n)
 	}
 
 }
+
 
 
