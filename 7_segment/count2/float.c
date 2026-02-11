@@ -7,7 +7,7 @@ void four_digit(int);
 #define seg_1 1<<8
 #define seg_2 1<<9
 #define seg_3 1<<10
-#define seg_4 1<<11
+#define seg_4 1<<11  
 
 int dp1=0, dp2=0, dp3=0;
 
@@ -91,4 +91,5 @@ void four_digit(int n)
 		delay_ms(3);
 		IOSET0|=seg_4;
 	}
+
 }
