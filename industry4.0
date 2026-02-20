@@ -3,6 +3,16 @@
 #include "spi.h"
 #include "uart.h"
 #include "lcd_header.h"
+volatile unsigned char rxByte;
+volatile unsigned char flag=0;
+
+void UART_ISR(void) __irq
+{
+	UOIIR=1;
+	flag=1;
+	rxByte=UORBR;
+	VICVectAddr=0;
+}
 
 int main()
 
@@ -18,6 +28,12 @@ int main()
 	delay_ms(1000);
 	IODIR0|=fan|light|buzzer|conveyor|led;
 	IOSET0|=fan|light|buzzer|conveyor|led;
+
+	VICIntSelect=0<<6;
+	VICVectCntl0=(0x20)|6;
+	VICVectAddr0=(unsigned long)UART_ISR;
+	UOIER=1<<0;
+	VICIntEnable=1<<6;
 	
 	while(1)
 	{
@@ -37,9 +53,10 @@ int main()
 		{
 			IOSET0|=led;
 		}
-		//sprintf(s,"%f",temp);
-		//UART_STR(s);
-		rxByte=UART_RX();
+
+		if(flag)
+		{
+		flag=0;
 		switch(rxByte)
 		{
 			case 'A': 
@@ -74,6 +91,7 @@ int main()
 				 IOSET0|=conveyor;
 				 break;
 		}
+	}
 	}
 
 }
