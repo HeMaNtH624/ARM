@@ -1,0 +1,473 @@
+Build target 'Target 1'
+assembling Startup.s...
+linking...
+pwm_switch.axf: Warning: L6665W: Neither Lib$$Request$$armlib Lib$$Request$$cpplib defined, not searching ARM libraries.
+pwm_switch.axf: Error: L6411E: No compatible library exists with a definition of startup symbol __main.
+pwm_switch.axf: Not enough information to list image symbols.
+pwm_switch.axf: Not enough information to list the image map.
+pwm_switch.axf: Finished: 2 information, 1 warning and 1 error messages.
+Target not created
+Build target 'Target 1'
+linking...
+pwm_switch.axf: Warning: L6665W: Neither Lib$$Request$$armlib Lib$$Request$$cpplib defined, not searching ARM libraries.
+pwm_switch.axf: Error: L6411E: No compatible library exists with a definition of startup symbol __main.
+pwm_switch.axf: Not enough information to list image symbols.
+pwm_switch.axf: Not enough information to list the image map.
+pwm_switch.axf: Finished: 2 information, 1 warning and 1 error messages.
+Target not created
+Build target 'Target 1'
+linking...
+pwm_switch.axf: Warning: L6665W: Neither Lib$$Request$$armlib Lib$$Request$$cpplib defined, not searching ARM libraries.
+pwm_switch.axf: Error: L6411E: No compatible library exists with a definition of startup symbol __main.
+pwm_switch.axf: Not enough information to list image symbols.
+pwm_switch.axf: Not enough information to list the image map.
+pwm_switch.axf: Finished: 2 information, 1 warning and 1 error messages.
+Target not created
+Build target 'Target 1'
+compiling pwm.c...
+pwm.c(38): warning:  #1-D: last line of file ends without a newline
+pwm.c:   }
+pwm.c:    ^
+pwm.c: pwm.c: 1 warning, 0 errors
+linking...
+Program Size: Code=1056 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"pwm_switch.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1056 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"pwm_switch.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling pwm.c...
+pwm.c(11): warning:  #186-D: pointless comparison of unsigned integer with zero
+pwm.c:          for(i=12000; i>=0; i--);
+pwm.c:                        ^
+pwm.c(45): warning:  #1-D: last line of file ends without a newline
+pwm.c:   }
+pwm.c:    ^
+pwm.c: pwm.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=1096 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"pwm_switch.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling pwm.c...
+pwm.c(11): warning:  #186-D: pointless comparison of unsigned integer with zero
+pwm.c:          for(i=12000; i>=0; i--);
+pwm.c:                        ^
+pwm.c(49): warning:  #1-D: last line of file ends without a newline
+pwm.c:   }
+pwm.c:    ^
+pwm.c: pwm.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=1128 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"pwm_switch.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1128 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"pwm_switch.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling pwm.c...
+pwm.c(11): warning:  #186-D: pointless comparison of unsigned integer with zero
+pwm.c:          for(i=12000; i>=0; i--);
+pwm.c:                        ^
+pwm.c(52): warning:  #1-D: last line of file ends without a newline
+pwm.c:   }
+pwm.c:    ^
+pwm.c: pwm.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=1108 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"pwm_switch.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling pwm.c...
+pwm.c(11): warning:  #186-D: pointless comparison of unsigned integer with zero
+pwm.c:          for(i=12000; i>=0; i--);
+pwm.c:                        ^
+pwm.c(53): warning:  #1-D: last line of file ends without a newline
+pwm.c:   }
+pwm.c:    ^
+pwm.c: pwm.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=1116 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"pwm_switch.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling pwm.c...
+pwm.c(11): warning:  #186-D: pointless comparison of unsigned integer with zero
+pwm.c:          for(i=12000; i>=0; i--);
+pwm.c:                        ^
+pwm.c(64): warning:  #1-D: last line of file ends without a newline
+pwm.c:   }
+pwm.c:    ^
+pwm.c: pwm.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=1016 RO-data=32 RW-data=4 ZI-data=1260  
+FromELF: creating hex file...
+"pwm_switch.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1016 RO-data=32 RW-data=4 ZI-data=1260  
+FromELF: creating hex file...
+"pwm_switch.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1016 RO-data=32 RW-data=4 ZI-data=1260  
+FromELF: creating hex file...
+"pwm_switch.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling pwm.c...
+pwm.c(11): warning:  #186-D: pointless comparison of unsigned integer with zero
+pwm.c:          for(i=12000; i>=0; i--);
+pwm.c:                        ^
+pwm.c(66): warning:  #1-D: last line of file ends without a newline
+pwm.c:   }
+pwm.c:    ^
+pwm.c: pwm.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=1136 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"pwm_switch.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1136 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"pwm_switch.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling pwm.c...
+pwm.c(11): warning:  #186-D: pointless comparison of unsigned integer with zero
+pwm.c:          for(i=12000; i>=0; i--);
+pwm.c:                        ^
+pwm.c(66): warning:  #1-D: last line of file ends without a newline
+pwm.c:   }
+pwm.c:    ^
+pwm.c: pwm.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=1020 RO-data=32 RW-data=4 ZI-data=1260  
+FromELF: creating hex file...
+"demo.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1020 RO-data=32 RW-data=4 ZI-data=1260  
+FromELF: creating hex file...
+"demo.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling pwm.c...
+pwm.c(11): warning:  #186-D: pointless comparison of unsigned integer with zero
+pwm.c:          for(i=12000; i>=0; i--);
+pwm.c:                        ^
+pwm.c(66): warning:  #1-D: last line of file ends without a newline
+pwm.c:   }
+pwm.c:    ^
+pwm.c: pwm.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=1080 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"demo.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1080 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"demo.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling pwm.c...
+pwm.c(11): warning:  #186-D: pointless comparison of unsigned integer with zero
+pwm.c:          for(i=12000; i>=0; i--);
+pwm.c:                        ^
+pwm.c(66): warning:  #1-D: last line of file ends without a newline
+pwm.c:   }
+pwm.c:    ^
+pwm.c: pwm.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=1020 RO-data=32 RW-data=4 ZI-data=1260  
+FromELF: creating hex file...
+"demo.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling pwm.c...
+pwm.c(11): warning:  #186-D: pointless comparison of unsigned integer with zero
+pwm.c:          for(i=12000; i>=0; i--);
+pwm.c:                        ^
+pwm.c(66): warning:  #1-D: last line of file ends without a newline
+pwm.c:   }
+pwm.c:    ^
+pwm.c: pwm.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=1080 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1080 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling pwm.c...
+pwm.c(11): warning:  #186-D: pointless comparison of unsigned integer with zero
+pwm.c:          for(i=12000; i>=0; i--);
+pwm.c:                        ^
+pwm.c(66): warning:  #1-D: last line of file ends without a newline
+pwm.c:   }
+pwm.c:    ^
+pwm.c: pwm.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=1088 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling pwm.c...
+pwm.c(11): warning:  #186-D: pointless comparison of unsigned integer with zero
+pwm.c:          for(i=12000; i>=0; i--);
+pwm.c:                        ^
+pwm.c(66): warning:  #1-D: last line of file ends without a newline
+pwm.c:   }
+pwm.c:    ^
+pwm.c: pwm.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=1108 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling pwm.c...
+pwm.c(11): warning:  #186-D: pointless comparison of unsigned integer with zero
+pwm.c:          for(i=12000; i>=0; i--);
+pwm.c:                        ^
+pwm.c(69): warning:  #1-D: last line of file ends without a newline
+pwm.c:   }
+pwm.c:    ^
+pwm.c: pwm.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=1164 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling pwm.c...
+pwm.c(11): warning:  #186-D: pointless comparison of unsigned integer with zero
+pwm.c:          for(i=12000; i>=0; i--);
+pwm.c:                        ^
+pwm.c(69): warning:  #1-D: last line of file ends without a newline
+pwm.c:   }
+pwm.c:    ^
+pwm.c: pwm.c: 2 warnings, 0 errors
+compiling PWM1.C...
+PWM1.C(12): error:  #65: expected a ";"
+PWM1.C:         while(1);
+PWM1.C:         ^
+PWM1.C(13): warning:  #1-D: last line of file ends without a newline
+PWM1.C:   }
+PWM1.C:    ^
+PWM1.C: PWM1.C: 1 warning, 1 error
+Target not created
+Build target 'Target 1'
+compiling PWM1.C...
+PWM1.C(13): warning:  #1-D: last line of file ends without a newline
+PWM1.C:   }
+PWM1.C:    ^
+PWM1.C: PWM1.C: 1 warning, 0 errors
+linking...
+real.axf: Error: L6200E: Symbol __ARM_use_no_argv multiply defined (by pwm1.o and pwm.o).
+real.axf: Error: L6200E: Symbol main multiply defined (by pwm1.o and pwm.o).
+real.axf: Not enough information to list image symbols.
+real.axf: Not enough information to list the image map.
+real.axf: Finished: 2 information, 0 warning and 2 error messages.
+Target not created
+Build target 'Target 1'
+linking...
+Program Size: Code=812 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=812 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling PWM1.C...
+PWM1.C(19): warning:  #1-D: last line of file ends without a newline
+PWM1.C:   }
+PWM1.C:    ^
+PWM1.C(19): error: At end of source:  #67: expected a "}"
+PWM1.C: PWM1.C: 1 warning, 1 error
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling PWM1.C...
+PWM1.C(19): warning:  #1-D: last line of file ends without a newline
+PWM1.C:   }
+PWM1.C:    ^
+PWM1.C: PWM1.C: 1 warning, 0 errors
+linking...
+Program Size: Code=856 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling PWM1.C...
+PWM1.C(19): warning:  #1-D: last line of file ends without a newline
+PWM1.C:   }
+PWM1.C:    ^
+PWM1.C: PWM1.C: 1 warning, 0 errors
+linking...
+Program Size: Code=852 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling PWM1.C...
+PWM1.C(20): warning:  #1-D: last line of file ends without a newline
+PWM1.C:   }
+PWM1.C:    ^
+PWM1.C: PWM1.C: 1 warning, 0 errors
+linking...
+Program Size: Code=848 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling PWM1.C...
+PWM1.C(38): warning:  #1-D: last line of file ends without a newline
+PWM1.C:   }
+PWM1.C:    ^
+PWM1.C: PWM1.C: 1 warning, 0 errors
+linking...
+Program Size: Code=968 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling PWM1.C...
+PWM1.C(40): warning:  #1-D: last line of file ends without a newline
+PWM1.C:   }
+PWM1.C:    ^
+PWM1.C: PWM1.C: 1 warning, 0 errors
+linking...
+Program Size: Code=984 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=984 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling PWM1.C...
+PWM1.C(40): warning:  #1-D: last line of file ends without a newline
+PWM1.C:   }
+PWM1.C:    ^
+PWM1.C: PWM1.C: 1 warning, 0 errors
+linking...
+Program Size: Code=992 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=992 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=992 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling PWM1.C...
+PWM1.C(40): warning:  #1-D: last line of file ends without a newline
+PWM1.C:   }
+PWM1.C:    ^
+PWM1.C: PWM1.C: 1 warning, 0 errors
+linking...
+Program Size: Code=992 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling PWM1.C...
+PWM1.C(40): warning:  #1-D: last line of file ends without a newline
+PWM1.C:   }
+PWM1.C:    ^
+PWM1.C: PWM1.C: 1 warning, 0 errors
+linking...
+Program Size: Code=992 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=992 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling PWM1.C...
+PWM1.C(40): warning:  #1-D: last line of file ends without a newline
+PWM1.C:   }
+PWM1.C:    ^
+PWM1.C: PWM1.C: 1 warning, 0 errors
+linking...
+Program Size: Code=992 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=992 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling PWM1.C...
+PWM1.C(40): warning:  #1-D: last line of file ends without a newline
+PWM1.C:   }
+PWM1.C:    ^
+PWM1.C: PWM1.C: 1 warning, 0 errors
+linking...
+Program Size: Code=984 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=984 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling PWM1.C...
+PWM1.C(40): warning:  #1-D: last line of file ends without a newline
+PWM1.C:   }
+PWM1.C:    ^
+PWM1.C: PWM1.C: 1 warning, 0 errors
+linking...
+Program Size: Code=988 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling PWM1.C...
+PWM1.C(50): warning:  #1-D: last line of file ends without a newline
+PWM1.C:   }
+PWM1.C:    ^
+PWM1.C: PWM1.C: 1 warning, 0 errors
+linking...
+Program Size: Code=1040 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1040 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling PWM1.C...
+PWM1.C(53): warning:  #1-D: last line of file ends without a newline
+PWM1.C:   }
+PWM1.C:    ^
+PWM1.C: PWM1.C: 1 warning, 0 errors
+linking...
+Program Size: Code=968 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling PWM1.C...
+PWM1.C(33): warning:  #1-D: last line of file ends without a newline
+PWM1.C:   }
+PWM1.C:    ^
+PWM1.C: PWM1.C: 1 warning, 0 errors
+linking...
+Program Size: Code=968 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"real.axf" - 0 Error(s), 1 Warning(s).
