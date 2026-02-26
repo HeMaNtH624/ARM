@@ -28,16 +28,17 @@ int main()
 		LCD_CMD(0XC0);
 		LCD_float(temp);
 
-		if(temp>20.0)
+		if(temp>50.0)
 		{
 			IOCLR0|=led;
 		}
 
-		else
+		if(temp<=50.0)
 		{
 			IOSET0|=led;
 		}
-
+		//sprintf(s,"%f",temp);
+		//UART_STR(s);
 		rxByte=UART_RX();
 		switch(rxByte)
 		{
@@ -76,5 +77,3 @@ int main()
 	}
 
 }
-
-
