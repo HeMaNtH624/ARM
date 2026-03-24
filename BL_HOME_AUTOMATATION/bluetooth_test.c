@@ -1,4 +1,4 @@
-#include "lcd_header.h" 
+#include "lcd_header.h"
 #include <string.h>
 
 #define led1 1<<23
